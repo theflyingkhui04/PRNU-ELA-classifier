@@ -9,9 +9,6 @@ __pycache__/
 *.pyo
 *.pyd
 
-# Ignore Jupyter Notebook checkpoints
-.ipynb_checkpoints/
-
 # Ignore model and large data files
 model_trained/*.h5
 model_trained/*.keras
@@ -35,8 +32,3 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Ignore reports and PDF exports
-reports/*.pdf
-
-# Ignore dataset sources (if not needed)
-dataset/source.txt

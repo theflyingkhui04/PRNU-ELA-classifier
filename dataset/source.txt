@@ -1,0 +1,2 @@
+Dataset dùng để train, valid, test các model đã được nhóm tổng hợp và để trên Google Drive với đường link:
+https://drive.google.com/drive/folders/1L0bAyZ7Zd1SLo2x2_uu2ZmETjUDPQ5pQ?usp=drive_link
