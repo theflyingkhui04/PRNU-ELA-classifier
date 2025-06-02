@@ -1,0 +1,42 @@
+# Ignore Python virtual environments
+.venv/
+venv/
+ENV/
+
+# Ignore Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore model and large data files
+model_trained/*.h5
+model_trained/*.keras
+model_trained/*.npy
+model_trained/*.ckpt
+model_trained/*.pb
+model_trained/paras_model.json
+
+# Ignore uploads and generated files
+uploads/
+*.log
+*.tmp
+*.bak
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore environment and IDE settings
+.env
+.vscode/
+.idea/
+
+# Ignore reports and PDF exports
+reports/*.pdf
+
+# Ignore dataset sources (if not needed)
+dataset/source.txt

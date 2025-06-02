@@ -1,0 +1,9 @@
+numpy
+scipy
+scikit-image
+matplotlib
+pillow
+tqdm
+tensorflow
+keras
+flask

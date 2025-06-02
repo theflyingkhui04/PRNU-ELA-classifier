@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phân loại ảnh</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Phân loại ảnh</h1>
+        <div class="main-layout">
+            <div class="controls-panel">
+                <form id="upload-form">
+                    <div class="form-row">
+                        <label class="custom-file-input">
+                            <input type="file" id="file-input" name="file" accept="image/*" required>
+                            <span id="file-label">Chọn ảnh</span>
+                        </label>
+                    </div>
+                    <div class="form-row">
+                        <label for="analysis-type">Chọn loại phân tích:</label>
+                        <select name="analysis_type" id="analysis-type">
+                            <option value="combined" selected>Kết hợp </option>
+                            <option value="original_vs_edited">Phân loại ảnh gốc / Đã qua chỉnh sửa</option>
+                            <option value="real_vs_ai">Phân loại ảnh thật / Ảnh AI</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <button type="submit" id="analyze-btn">Phân tích</button>
+                    </div>
+                </form>
+            </div>
+            <div class="display-panel">
+                <div id="preview-container" style="display:none;">
+                    <img id="preview-img" src="#" alt="Preview" />
+                </div>
+                <div id="result"></div>
+                <div id="predictions" style="margin-top: 10px; font-size: 0.9em;"></div>
+            </div>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
